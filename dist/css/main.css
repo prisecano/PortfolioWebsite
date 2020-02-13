@@ -106,7 +106,7 @@ textarea {
 
 body {
 	background-color: black;
-	font-family: Verdana, sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
 	font-size: 1em;
 	line-height: inherit;
 	font-weight: 300;
@@ -122,6 +122,12 @@ h6 {
 	line-height: 1.1;
 	font-weight: bold;
 	margin-bottom: 15px;
+	
+
+
+    font-family: 'Knewave', cursive;
+
+
 }
 
 a {
@@ -135,8 +141,12 @@ p {
 
 h1 {
 	padding: 0px 10px;
-	font-size: 32px;
+	font-size: 4em;
 	color: white;
+}
+
+h3 {
+	font-size: 2em;
 }
 
 ul {
@@ -144,21 +154,19 @@ ul {
 }
 
 .popup {
-	background-color: rgba(0, 0, 0, 0.75);
-	border-top-right-radius: 25px;
 	margin: 0 auto;
 	margin-top: -50px;
-	width: 67%;
+	width: 60%;
 }
 
 .pop {
 	background-color: black;
 	margin: 0 auto;
-	width: 67%;
+	width: 60%;
 }
 
 #container {
-	background-color: black;
+	background-color: #222;
 }
 
 /* =========================== Header =========================== */
@@ -170,56 +178,82 @@ ul {
 }
 
 .imgpf {
-	border: 8px solid white;
+	border: 8px solid rgb(36, 36, 36);
 	border-radius: 10%;
-	margin-top: -100px;
-	margin-bottom: 20px;
-	margin-right: 20px;
+	margin-top: -125px;
 	max-width: 300px;
 	width: 100%;
 	float: left;
 }
 
+nav {
+	background-color: rgba(0, 0, 0, 0.70);
+	border-top-right-radius: 25px;
+	transition: ease 0.5s;
+}
+
 nav a {
-	color: white;
+	color: rgb(185, 185, 185);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;
+	height: 48px;
+	padding: 0px 20px;
+	border-bottom: 2px solid transparent;
+	transition: ease 0.2s;
 }
 
 nav ul {
 	display: flex;
+	flex-grow: 1;
 }
 
-nav li {
-	display: flex;
-	align-items: center;
-	height: 50px;
-	padding: 0px 20px;
-	border-bottom: 2px solid transparent;
+
+nav:hover {
+	background-color: rgba(0, 0, 0, 0.95);
 }
 
-nav li:hover {
-	/* transition: ease 10s; */
-	/* border-bottom-color: rgba(0, 190, 10, 0.75); */
-	border-image: linear-gradient(90deg, rgba(0, 190, 20, 1) 0%, rgba(0, 198, 255, 1) 100%);
-	border-image-slice: 1;
+nav a:hover {
+	color: white;
+}
+
+nav .gradient1:hover{
+	border-bottom-color: #00be14;
+}
+nav .gradient2:hover{
+	border-bottom-color: #00c043;
+}
+nav .gradient3:hover{
+	border-bottom-color: #00c172;
+}
+nav .gradient4:hover{
+	border-bottom-color: #00c3a1;
+}
+nav .gradient5:hover{
+	border-bottom-color: #00c4d0;
+}
+nav .gradient6:hover{
+	border-bottom-color: #00c6ff;
 }
 
 /* =========================== Main =========================== */
 
+main {
+	background-color: rgb(24, 24, 24);
+	padding: 75px 100px;
+	padding-bottom: 200px;
+}
+
 /* =========================== Footer =========================== */
 footer {
-	margin: 0 auto;
+	margin-top: -100px;
+	border-top-left-radius: 75px;
+	border-top-right-radius: 75px;
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
-	background-color: rgba(0, 0, 0, 1);
-}
-
-.footernav a {
-	padding-left: 10px;
-	border-left: 2px solid transparent;
-}
-
-.footernav a:hover {
-	border-image: linear-gradient(180deg, rgba(0, 190, 20, 1) 0%, rgba(0, 198, 255, 1) 100%);
-	border-image-slice: 1;
+	background-color: rgb(16, 16, 16);
 }
 
 .navitem {
@@ -229,13 +263,14 @@ footer {
 	width: 225px;
 }
 
-footer ul {
+.footernav ul {
 	margin: 10px;
 	text-align: left;
 }
 
-footer li {
-	margin: 20px;
+footer a {
+	padding: 0 20px;
+	color: white;
 }
 
 footer span {
@@ -246,19 +281,11 @@ footer {
 	color: white;
 }
 
-footer a {
-	color: white;
+footer .flexbet {
+	justify-content: space-evenly;
 }
 
-footer p {
-	color: white;
-}
-
-#bodytitle {
-	font-size: 28px;
-}
-
-#imgdmca {
+.imgdmca {
 	width: 100px;
 }
 
@@ -274,7 +301,7 @@ footer p {
 	display: block;
 }
 
-.tile {
+.copyf {
 	padding: 10px;
 	margin-right: 5px;
 }
@@ -390,9 +417,42 @@ Helper classes
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (max-width: 1024px) {
-	footer ul {
-		flex-direction: column;
+@media only screen and (max-width: 1818px) {
+	.popup {
+		width: 80%;
+	}
+	
+	.pop {
+		width: 80%;
+	}
+
+}
+
+@media only screen and (max-width: 1414px) {
+	.popup {
+		width: 90%;
+	}
+	
+	.pop {
+		width: 90%;
+	}
+	.navitem {
+		width: 200px;
+	}
+}
+
+@media only screen and (max-width: 1212px) {
+	.popup {
+		width: 100%;
+	}
+	
+	.pop {
+		width: 100%;
+	}
+	footer .flexbet {
+		flex-wrap: wrap;
+	}
+	.footernav ul {
 		text-align: center;
 	}
 }
