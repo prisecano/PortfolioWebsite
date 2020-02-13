@@ -102,7 +102,6 @@ textarea {
 * {
 	padding: 0;
 	margin: 0;
-	color: white;
 }
 
 body {
@@ -127,27 +126,62 @@ h6 {
 
 a {
 	text-decoration: none;
+	color: black;
+}
+
+p {
 	color: white;
 }
 
 h1 {
 	padding: 0px 10px;
 	font-size: 32px;
-}
-
-h3 {
-	border: 2px solid transparent;
-	border-bottom-color: rgba(0, 190, 10, 0.75);
+	color: white;
 }
 
 ul {
 	list-style: none;
 }
 
+.popup {
+	background-color: rgba(0, 0, 0, 0.75);
+	border-top-right-radius: 25px;
+	margin: 0 auto;
+	margin-top: -50px;
+	width: 67%;
+}
+
+.pop {
+	background-color: black;
+	margin: 0 auto;
+	width: 67%;
+}
+
+#container {
+	background-color: black;
+}
+
 /* =========================== Header =========================== */
-header {
-	background-color: rgba(0, 0, 0, 0.45);
-	margin-bottom: 25px;
+.hero {
+	background-image: url(../img/decatron.png);
+	background-image: url(../img/pro.jpeg);
+	background-size: cover;
+	height: 350px;
+}
+
+.imgpf {
+	border: 8px solid white;
+	border-radius: 10%;
+	margin-top: -100px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	max-width: 300px;
+	width: 100%;
+	float: left;
+}
+
+nav a {
+	color: white;
 }
 
 nav ul {
@@ -155,26 +189,21 @@ nav ul {
 }
 
 nav li {
-	padding: 10px 20px;
+	display: flex;
+	align-items: center;
+	height: 50px;
+	padding: 0px 20px;
 	border-bottom: 2px solid transparent;
 }
 
 nav li:hover {
-	transition: ease 10s;
+	/* transition: ease 10s; */
 	/* border-bottom-color: rgba(0, 190, 10, 0.75); */
 	border-image: linear-gradient(90deg, rgba(0, 190, 20, 1) 0%, rgba(0, 198, 255, 1) 100%);
 	border-image-slice: 1;
 }
 
 /* =========================== Main =========================== */
-
-.imgpf {
-	margin-bottom: 20px;
-	margin-right: 20px;
-	max-width: 300px;
-	width: 100%;
-	float: left;
-}
 
 /* =========================== Footer =========================== */
 footer {
@@ -213,6 +242,18 @@ footer span {
 	display: block;
 }
 
+footer {
+	color: white;
+}
+
+footer a {
+	color: white;
+}
+
+footer p {
+	color: white;
+}
+
 #bodytitle {
 	font-size: 28px;
 }
@@ -248,7 +289,6 @@ Helper classes
 
 .wrapper {
 	margin: 0 auto;
-	width: 67%;
 }
 
 .flexbet {
@@ -350,8 +390,11 @@ Helper classes
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-	/* Style adjustments for viewports that meet the condition */
+@media only screen and (max-width: 1024px) {
+	footer ul {
+		flex-direction: column;
+		text-align: center;
+	}
 }
 
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
