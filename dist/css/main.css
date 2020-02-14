@@ -106,7 +106,7 @@ textarea {
 
 body {
 	background-color: black;
-    font-family: 'Noto Sans JP', sans-serif;
+	font-family: 'Noto Sans JP', sans-serif;
 	font-size: 1em;
 	line-height: inherit;
 	font-weight: 300;
@@ -122,17 +122,12 @@ h6 {
 	line-height: 1.1;
 	font-weight: bold;
 	margin-bottom: 15px;
-	
-
-
-    font-family: 'Knewave', cursive;
-
-
+	font-family: 'Knewave', cursive;
 }
 
 a {
 	text-decoration: none;
-	color: black;
+	color: white;
 }
 
 p {
@@ -154,9 +149,10 @@ ul {
 }
 
 .popup {
-	margin: 0 auto;
-	margin-top: -50px;
 	width: 60%;
+	position: absolute;
+	bottom: 0;
+	left: 20%;
 }
 
 .pop {
@@ -166,7 +162,7 @@ ul {
 }
 
 #container {
-	background-color: #222;
+	background-color: rgb(48, 48, 48);
 }
 
 /* =========================== Header =========================== */
@@ -175,33 +171,21 @@ ul {
 	background-image: url(../img/pro.jpeg);
 	background-size: cover;
 	height: 350px;
+	position: relative;
+}
+
+.pf {
+	margin-top: -190px;
+	float: left;
+	position: relative;
 }
 
 .imgpf {
 	border: 8px solid rgb(36, 36, 36);
 	border-radius: 10%;
-	margin-top: -125px;
 	max-width: 300px;
 	width: 100%;
-	float: left;
-}
-
-nav {
-	background-color: rgba(0, 0, 0, 0.70);
-	border-top-right-radius: 25px;
 	transition: ease 0.5s;
-}
-
-nav a {
-	color: rgb(185, 185, 185);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-grow: 1;
-	height: 48px;
-	padding: 0px 20px;
-	border-bottom: 2px solid transparent;
-	transition: ease 0.2s;
 }
 
 nav ul {
@@ -209,6 +193,25 @@ nav ul {
 	flex-grow: 1;
 }
 
+nav {
+	background-color: rgba(0, 0, 0, 0.70);
+	border-top-right-radius: 25px;
+	transition: ease 0.5s;
+	margin-left: 316px;
+}
+
+nav a {
+	color: rgb(185, 185, 185);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-grow: 1;
+	height: 48px;
+	padding: 0px 20px;
+	border-bottom: 2px solid transparent;
+	transition: ease 0.2s;
+}
 
 nav:hover {
 	background-color: rgba(0, 0, 0, 0.95);
@@ -218,22 +221,22 @@ nav a:hover {
 	color: white;
 }
 
-nav .gradient1:hover{
+nav .gradient1:hover {
 	border-bottom-color: #00be14;
 }
-nav .gradient2:hover{
+nav .gradient2:hover {
 	border-bottom-color: #00c043;
 }
-nav .gradient3:hover{
+nav .gradient3:hover {
 	border-bottom-color: #00c172;
 }
-nav .gradient4:hover{
+nav .gradient4:hover {
 	border-bottom-color: #00c3a1;
 }
-nav .gradient5:hover{
+nav .gradient5:hover {
 	border-bottom-color: #00c4d0;
 }
-nav .gradient6:hover{
+nav .gradient6:hover {
 	border-bottom-color: #00c6ff;
 }
 
@@ -250,6 +253,8 @@ footer {
 	margin-top: -100px;
 	border-top-left-radius: 75px;
 	border-top-right-radius: 75px;
+	padding: 75px 0;
+	padding-bottom: 25px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -264,20 +269,22 @@ footer {
 }
 
 .footernav ul {
-	margin: 10px;
 	text-align: left;
 }
 
-footer a {
-	padding: 0 20px;
-	color: white;
+.footernav li {
+	padding: 10px 0;
 }
 
 footer span {
 	display: block;
 }
 
-footer {
+footer a {
+	color: rgb(185, 185, 185);
+}
+
+footer a:hover {
 	color: white;
 }
 
@@ -299,6 +306,11 @@ footer .flexbet {
 
 .copytile {
 	display: block;
+}
+
+.footertitle {
+	padding-bottom: 10px;
+	color: white;
 }
 
 .copyf {
@@ -420,40 +432,95 @@ Helper classes
 @media only screen and (max-width: 1818px) {
 	.popup {
 		width: 80%;
+		left: 10%;
 	}
-	
+
 	.pop {
 		width: 80%;
 	}
 
+	nav {
+		margin-left: 316px;
+	}
 }
 
 @media only screen and (max-width: 1414px) {
 	.popup {
 		width: 90%;
+		left: 5%;
 	}
-	
+
 	.pop {
 		width: 90%;
 	}
+
 	.navitem {
 		width: 200px;
+	}
+
+	nav {
+		margin-left: 316px;
 	}
 }
 
 @media only screen and (max-width: 1212px) {
 	.popup {
 		width: 100%;
+		left: 0;
 	}
-	
+
 	.pop {
 		width: 100%;
 	}
+
+	nav {
+		border-top-right-radius: 0%;
+		margin-left: 236px;
+	}
+
+	nav ul {
+		flex-wrap: wrap;
+	}
+
+	.imgpf {
+		border-top-left-radius: 0%;
+		border-bottom-left-radius: 0%;
+		max-width: 220px;
+		margin-top: 40px;
+	}
+
 	footer .flexbet {
 		flex-wrap: wrap;
 	}
+
 	.footernav ul {
 		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 1010px) {
+	main {
+		padding: 75px 25px;
+		margin-top: -276px;
+		padding-top: 300px;
+		padding-bottom: 200px;
+	}
+	nav {
+		margin-left: 0;
+	}
+	.pf {
+		float: none;
+		display: flex;
+		justify-content: center;
+		margin-top: 0;
+	}
+
+	.imgpf {
+		border-radius: 10%;
+	}
+
+	footer .flexbet {
+		padding-bottom: 50px;
 	}
 }
 
