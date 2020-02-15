@@ -184,6 +184,7 @@ ul {
 	border: 8px solid rgb(36, 36, 36);
 	border-radius: 10%;
 	max-width: 300px;
+	max-height: 300px;
 	width: 100%;
 	transition: ease 0.5s;
 }
@@ -486,6 +487,7 @@ Helper classes
 		border-top-left-radius: 0%;
 		border-bottom-left-radius: 0%;
 		max-width: 220px;
+		max-height: 220px;
 		margin-top: 40px;
 	}
 
