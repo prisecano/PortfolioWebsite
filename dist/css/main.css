@@ -134,6 +134,11 @@ p {
 	color: white;
 }
 
+i {
+	font-size: 2em;
+	margin-right: 10px;
+}
+
 h1 {
 	padding: 0px 10px;
 	font-size: 4em;
@@ -278,6 +283,8 @@ footer {
 
 .footernav li {
 	padding: 10px 0;
+	display: flex;
+	align-items: center;
 }
 
 footer span {
@@ -294,6 +301,10 @@ footer a:hover {
 
 footer .flexbet {
 	justify-content: space-evenly;
+}
+
+.contact li {
+	display: block;
 }
 
 .imgdmca {
@@ -482,11 +493,10 @@ Helper classes
 		margin-left: 236px;
 	}
 
-
 	nav ul {
 		flex-wrap: wrap;
 	}
-	
+
 	nav a {
 		padding: 0 15px;
 	}
