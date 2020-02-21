@@ -103,17 +103,17 @@ textarea {
 * {
 	padding: 0;
 	margin: 0;
+	box-sizing: content-box;
 }
 
 body {
+	position: relative;
 	background-color: black;
 	font-family: 'Noto Sans JP', sans-serif;
 	font-size: 1em;
 	line-height: inherit;
 	font-weight: 300;
 }
-
-
 
 ul {
 	list-style: none;
@@ -123,11 +123,10 @@ ul {
 	position: absolute;
 	width: 60%;
 	left: 20%;
-	bottom: 0;
+	bottom: -10px;
 }
 
 .pop {
-	position: relative;
 	width: 60%;
 	box-shadow: 0 0 3px black;
 	background-color: black;
@@ -156,6 +155,11 @@ p {
 }
 
 a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
 	text-decoration: none;
 	color: white;
 }
@@ -197,7 +201,6 @@ i {
 	margin-top: -190px;
 	margin-right: 25px;
 	float: left;
-	position: relative;
 }
 
 .imgpf {
@@ -265,6 +268,7 @@ nav .gradient6:hover {
 
 main {
 	background-color: rgb(24, 24, 24);
+	position: relative;
 }
 
 .altDark {
@@ -287,14 +291,47 @@ main {
 	box-shadow: 0px -3px 8px 0px rgb(8, 8, 8);
 }
 
-#about {
+ul.nav a:hover {
+	background-color: transparent;
+	color: rgba(255, 255, 255, 1);
+}
+
+#about.altDark {
 	margin-top: 100px;
-	border-top-left-radius: 75px;
-	border-top-right-radius: 75px;
-	padding: 75px 0;
-	padding-bottom: 200px;
-	background-color: rgb(16, 16, 16);
-	box-shadow: 0px -3px 8px 0px rgb(8, 8, 8);
+}
+
+.sideNav {
+	position: fixed;
+	top: 40%;
+	left: 80%;
+	background-color: rgba(0, 0, 0, 0.70);
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+.sideNav a {
+	color: rgb(185, 185, 185);
+}
+
+.sideNavLinks > li.active > a,
+.sideNavLinks > li.active > a:focus,
+.sideNavLinks > li.active > a:hover {
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(0, 0, 0, 0.70);
+}
+.sideNavLinks > li.active.top-sideNav > a,
+.sideNavLinks > li.active.top-sideNav > a:focus,
+.sideNavLinks > li.active.top-sideNav > a:hover {
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(0, 0, 0, 0.70);
+	border-top-right-radius: 25px;
+}
+.sideNavLinks > li.active.bottom-sideNav > a,
+.sideNavLinks > li.active.bottom-sideNav > a:focus,
+.sideNavLinks > li.active.bottom-sideNav > a:hover {
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(0, 0, 0, 0.70);
+	border-bottom-right-radius: 25px;
 }
 
 /* =========================== Footer =========================== */
@@ -307,6 +344,7 @@ footer {
 	text-align: center;
 	background-color: rgb(16, 16, 16);
 	box-shadow: 0px -3px 8px 0px rgb(8, 8, 8);
+	position: relative;
 }
 
 .navitem {
@@ -492,9 +530,13 @@ Helper classes
 	nav {
 		margin-left: 316px;
 	}
+
+	.sideNav {
+		left: 90%;
+	}
 }
 
-@media only screen and (max-width: 1414px) {
+@media only screen and (max-width: 1313px) {
 	.popup {
 		width: 90%;
 		left: 5%;
@@ -510,6 +552,10 @@ Helper classes
 
 	nav {
 		margin-left: 316px;
+	}
+
+	.sideNav {
+		display: none;
 	}
 }
 
@@ -554,11 +600,6 @@ Helper classes
 }
 
 @media only screen and (max-width: 1010px) {
-	main {
-		margin-top: -276px;
-		padding-top: 300px;
-	}
-
 	nav {
 		margin-left: 0;
 	}
@@ -576,9 +617,7 @@ Helper classes
 	footer .flexbet {
 		padding-bottom: 50px;
 	}
-}
 
-@media only screen and (max-width: 1010px) {
 	.footernav {
 		margin-bottom: 40px;
 	}

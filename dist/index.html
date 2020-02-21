@@ -11,16 +11,18 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
   
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:300|Knewave|Noto+Sans+JP&display=swap" rel="stylesheet"> 
-  <!-- <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".sideNav" data-offset="20">
   <div id="container">
 
     <div class="herof">
@@ -45,10 +47,22 @@
     </div>
 
     <div class="pop">
-      <div class="pf">
-        <img class="imgpf" src="img/PF Professional.png" alt="Anonymous profile picture">
+
+      <div class="sideNav">
+        <ul class="nav sideNavLinks">
+          <li class="active top-sideNav"><a href="#container">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#views">Views</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li class="bottom-sideNav"><a href="#contact">Contact</a></li>
+        </ul>
       </div>
+
       <Main>
+        <div class="pf">
+          <img class="imgpf" src="img/PF Professional.png" alt="Anonymous profile picture">
+        </div>
         <div>
           <div>
             <h1>
@@ -61,84 +75,144 @@
             </h1>
           </div>
           <div class="content">
-              <section id="about">
-                <div class="wrapper">
-                  <div class="maintitleS">
-                    <h2 class="maintitle">
-                      about
-                    </h2>
-                  </div>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
-                  </p>
+            <section id="about" class="altDark">
+              <div class="wrapper">
+                <div class="maintitleS">
+                  <h2 class="maintitle">
+                    about
+                  </h2>
                 </div>
-              </section>
-              <section id="education" class="altBright">
-                <div class="wrapper">
-                  <div class="maintitleS">
-                    <h2 class="maintitle">
-                      education
-                    </h2>
-                  </div>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
-                  </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                  <br>
+                  <br>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                </p>
+              </div>
+            </section>
+            <section id="education" class="altBright">
+              <div class="wrapper">
+                <div class="maintitleS">
+                  <h2 class="maintitle">
+                    education
+                  </h2>
                 </div>
-              </section>
-              <section id="portfolio" class="altDark">
-                <div class="wrapper">
-                  <div class="maintitleS">
-                    <h2 class="maintitle">
-                      portfolio
-                    </h2>
-                  </div>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
-                  </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                  <br>
+                  <br>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                </p>
+              </div>
+            </section>
+            <section id="portfolio" class="altDark">
+              <div class="wrapper">
+                <div class="maintitleS">
+                  <h2 class="maintitle">
+                    portfolio
+                  </h2>
                 </div>
-              </section>
-              <section id="views" class="altBright">
-                <div class="wrapper">
-                  <div class="maintitleS">
-                    <h2 class="maintitle">
-                      views
-                    </h2>
-                  </div>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
-                  </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                  <br>
+                  <br>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                </p>
+              </div>
+            </section>
+            <section id="views" class="altBright">
+              <div class="wrapper">
+                <div class="maintitleS">
+                  <h2 class="maintitle">
+                    views
+                  </h2>
                 </div>
-              </section>
-              <section id="resume" class="altDark">
-                <div class="wrapper">
-                  <div class="maintitleS">
-                    <h2 class="maintitle">
-                      resume
-                    </h2>
-                  </div>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
-                  </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                  <br>
+                  <br>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                </p>
+              </div>
+            </section>
+            <section id="resume" class="altDark">
+              <div class="wrapper">
+                <div class="maintitleS">
+                  <h2 class="maintitle">
+                    resume
+                  </h2>
                 </div>
-              </section>
-              <section id="contact" class="altBright">
-                <div class="wrapper">
-                  <div class="maintitleS">
-                    <h2 class="maintitle">
-                      contact
-                    </h2>
-                  </div>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
-                  </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                  <br>
+                  <br>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                </p>
+              </div>
+            </section>
+            <section id="contact" class="altBright">
+              <div class="wrapper">
+                <div class="maintitleS">
+                  <h2 class="maintitle">
+                    contact
+                  </h2>
                 </div>
-              </section>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                  <br>
+                  <br>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quos excepturi. Distinctio facere iste incidunt repellendus dolor dolorem quae exercitationem, unde nihil velit esse, consequuntur hic perferendis laboriosam provident.
+                </p>
+              </div>
+            </section>
           </div>
         </div>
       </Main>
