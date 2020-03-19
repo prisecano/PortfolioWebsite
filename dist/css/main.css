@@ -271,6 +271,10 @@ main {
 	position: relative;
 }
 
+.hero-title {
+	padding-top: 25px;
+}
+
 .altDark {
 	margin-top: -100px;
 	border-top-left-radius: 75px;
