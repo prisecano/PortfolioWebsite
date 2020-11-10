@@ -9,6 +9,8 @@
     <link rel="manifest" href="site.webmanifest" />
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <script src="js/vendor/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap-3.4.1.js"></script>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link
@@ -439,26 +441,22 @@
         </footer>
       </div>
     </div>
-    <script src="js/vendor/jquery-3.5.1.min.js"></script>
     <script type="text/javascript">
       function downloadJSAtOnload() {
         var element1 = document.createElement('script')
         var element2 = document.createElement('script')
         var element3 = document.createElement('script')
         var element4 = document.createElement('script')
-        var element5 = document.createElement('script')
 
-        element1.src = 'js/bootstrap-3.4.1.js'
-        element2.src = 'js/fontawesome.js'
-        element3.src = 'js/vendor/modernizr-3.8.0.min.js'
-        element4.src = 'https://images.dmca.com/Badges/DMCABadgeHelper.min.js'
-        element5.src = 'js/analytics.js'
+        element1.src = 'js/fontawesome.js'
+        element2.src = 'js/vendor/modernizr-3.8.0.min.js'
+        element3.src = 'https://images.dmca.com/Badges/DMCABadgeHelper.min.js'
+        element4.src = 'js/analytics.js'
 
         document.body.appendChild(element1)
         document.body.appendChild(element2)
         document.body.appendChild(element3)
         document.body.appendChild(element4)
-        document.body.appendChild(element5)
       }
 
       if (window.addEventListener)
