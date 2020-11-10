@@ -1,5 +1,5 @@
 window.jQuery ||
-  document.write('<script src="js/vendor/jquery-3.4.1.min.js"></script>')
+  document.write('<script src="js/vendor/jquery-3.5.1.min.js"></script>')
 window.ga = function () {
   ga.q.push(arguments)
 }
