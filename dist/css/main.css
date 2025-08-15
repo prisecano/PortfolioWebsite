@@ -51,7 +51,6 @@ textarea {
 * {
 	padding: 0;
 	margin: 0;
-	box-sizing: content-box;
 }
 
 body {
@@ -138,8 +137,8 @@ i {
 
 /* =========================== Header =========================== */
 .hero {
-	background-image: url(../img/decatron.png);
 	background-image: url(../img/pro.jpeg);
+	background-image: url(../img/quantum_computer.png);
 	background-size: cover;
 	height: 350px;
 	position: relative;
@@ -170,7 +169,7 @@ nav {
 	box-shadow: 1px -1px 3px 0px black;
 	border-top-right-radius: 25px;
 	transition: ease 0.5s;
-	margin-left: 316px;
+	margin-left: 300px;
 }
 
 nav a {
@@ -221,6 +220,7 @@ main {
 
 .hero-title {
 	padding-top: 25px;
+	display: flow-root;
 }
 
 .altDark {
@@ -359,6 +359,7 @@ footer .flexbet {
 .copyf {
 	padding: 10px;
 	margin-right: 5px;
+	display: block ruby;
 }
 
 .cgrey {
@@ -371,7 +372,7 @@ Helper classes
 
 .wrapper {
 	margin: 0 auto;
-	width: 90%;
+	width: 60%;
 }
 
 .flexbet {
@@ -483,10 +484,6 @@ Helper classes
 		width: 80%;
 	}
 
-	nav {
-		margin-left: 316px;
-	}
-
 	.sideNav {
 		left: 90%;
 	}
@@ -506,10 +503,6 @@ Helper classes
 		width: 200px;
 	}
 
-	nav {
-		margin-left: 316px;
-	}
-
 	.sideNav {
 		display: none;
 	}
@@ -527,7 +520,7 @@ Helper classes
 
 	nav {
 		border-top-right-radius: 0%;
-		margin-left: 236px;
+		margin-left: 220px;
 	}
 
 	nav ul {
@@ -568,6 +561,10 @@ Helper classes
 
 	.imgpf {
 		border-radius: 10%;
+	}
+
+	.hero-title {
+  		text-align: center;
 	}
 
 	footer .flexbet {
